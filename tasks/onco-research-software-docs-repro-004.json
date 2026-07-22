@@ -16,7 +16,7 @@
   "acceptanceCriteria": [
     "Provides a pinned-environment recipe per ecosystem (conda-lock/pixi/renv.lock/hashed requirements) plus an optional container digest; 'reproducible' means a clean machine given only the lockfile runs the artifact to completion with recorded outputs.",
     "A CI workflow recreates the environment and executes one tutorial/test end-to-end headlessly on shipped/synthetic data; the run reference is recorded in reproEnv.ciRunRef.",
-    "The harness code is MIT-licensed; pnpm build && pnpm test && pnpm lint are green for any Elyos-side tooling.",
+    "The harness code is MIT-licensed; pnpm build && pnpm test && pnpm lint are green for any Hee-Lee Oss-side tooling.",
     "DCO signed-off commit.",
     "At least one tutorial runs successfully through the harness end-to-end, demonstrating the approach works before the pilot contribution (pilot-007) depends on it."
   ],

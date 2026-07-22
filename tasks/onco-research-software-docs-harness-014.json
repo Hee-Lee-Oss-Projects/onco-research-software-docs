@@ -16,7 +16,7 @@
   "acceptanceCriteria": [
     "The harness runs reproducibly in CI for at least three ecosystems: e.g., Python/conda-lock or pixi, R/renv, and a container/Docker-based tool, each executing a tutorial or test end-to-end from its lockfile.",
     "A documented 'add a new tool' path is committed, enabling contributors to plug in a new ecosystem lockfile without modifying the core harness.",
-    "Code is MIT-licensed; CI is green for all three ecosystems; pnpm build && pnpm test && pnpm lint pass for any Elyos-side tooling.",
+    "Code is MIT-licensed; CI is green for all three ecosystems; pnpm build && pnpm test && pnpm lint pass for any Hee-Lee Oss-side tooling.",
     "DCO signed-off commit.",
     "The generalized harness is the direct dependency for contrib-015 (imaging tutorial) and contrib-016 (single-cell docs + doctests)."
   ],

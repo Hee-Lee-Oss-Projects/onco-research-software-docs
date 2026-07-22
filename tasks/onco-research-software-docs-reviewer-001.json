@@ -20,9 +20,9 @@
     "It is recorded that until the role is filled, all project tasks remain verifiedNeed:false and no contribution may pass the gate."
   ],
   "resources": [
-    "C:\\code\\elyos\\planning\\projects\\onco-research-software-docs\\PLAN.md",
-    "C:\\code\\elyos\\docs\\good-deed-definition.md",
-    "C:\\code\\elyos\\planning\\ROADMAP.md",
+    "C:\\code\\hee-lee-oss\\planning\\projects\\onco-research-software-docs\\PLAN.md",
+    "C:\\code\\hee-lee-oss\\docs\\good-deed-definition.md",
+    "C:\\code\\hee-lee-oss\\planning\\ROADMAP.md",
     "SPDX license list; OSI-approved license list; Developer Certificate of Origin (DCO)"
   ],
   "output": "A committed appointment record naming the License + Data-provenance reviewer(s), their qualifications, and the rotation rule, unblocking the gate (gate-002) and the M0 pilot review.",

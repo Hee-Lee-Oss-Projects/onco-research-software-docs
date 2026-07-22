@@ -11,8 +11,8 @@
   "deliverable": "pr",
   "tokenEstimate": "medium",
   "status": "open",
-  "context": "The project accumulates outcome artifacts (outcomes/<task-id>.json) recording merge-commit URLs, coverage deltas, and reuse events. A dashboard that reads the outcome ledger and summarizes current success metrics (contributions merged, tools covered, coverage improvements, reuse events) makes the project's impact visible and verifiable to contributors, donors, and the broader community — turning the outcome ledger from raw JSON into a readable summary. This is Elyos-side tooling that reads the ledger; it does not process or display any patient data.",
-  "objective": "Build and commit a Elyos-side outcome dashboard that reads the outcome ledger from committed JSON files and displays current success metrics: contributions merged, tools and ecosystems covered, coverage deltas, and reuse events.",
+  "context": "The project accumulates outcome artifacts (outcomes/<task-id>.json) recording merge-commit URLs, coverage deltas, and reuse events. A dashboard that reads the outcome ledger and summarizes current success metrics (contributions merged, tools covered, coverage improvements, reuse events) makes the project's impact visible and verifiable to contributors, donors, and the broader community — turning the outcome ledger from raw JSON into a readable summary. This is Hee-Lee Oss-side tooling that reads the ledger; it does not process or display any patient data.",
+  "objective": "Build and commit a Hee-Lee Oss-side outcome dashboard that reads the outcome ledger from committed JSON files and displays current success metrics: contributions merged, tools and ecosystems covered, coverage deltas, and reuse events.",
   "acceptanceCriteria": [
     "Dashboard reads committed outcomes/<task-id>.json files and summarizes: number of contributions merged, tools covered, ecosystems covered, aggregate coverage deltas, and verified reuse events.",
     "Dashboard output is a static document or minimal web artifact (not a running service); it reads from committed JSON, not a live database.",
@@ -26,7 +26,7 @@
     "PLAN.md — Attribution of outcomes section",
     "Outcome artifacts from prior contribution tasks"
   ],
-  "output": "A committed MIT-licensed Elyos-side outcome dashboard reading the outcome ledger and displaying current success metrics, making the project's impact visible and verifiable.",
+  "output": "A committed MIT-licensed Hee-Lee Oss-side outcome dashboard reading the outcome ledger and displaying current success metrics, making the project's impact visible and verifiable.",
   "requestor": "TO BE SECURED",
   "verifiedNeed": false,
   "outputLicense": "MIT"

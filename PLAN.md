@@ -154,7 +154,7 @@ activity, a docs link, an issue referencing the tutorial). Self-reported reuse d
 - Tools that are not genuinely open-source, are unmaintained/abandoned, or primarily serve a
   for-profit product.
 - Contributing under a CLA that assigns broad copyright/patent rights in a way incompatible with
-  Elyos's public-good stance (escalated, see gate).
+  Hee-Lee Oss's public-good stance (escalated, see gate).
 - Standing up or running cancer analysis pipelines as a service; we contribute artifacts, we do
   not operate infrastructure.
 
@@ -201,8 +201,8 @@ recreates the environment and executes the tutorial/tests headlessly on shipped/
 data. "Reproducible" is defined as: a clean machine, given only the lockfile, runs the artifact
 to completion with the recorded outputs.
 
-**Tech stack.** TypeScript/ESM + pnpm for any Elyos-side shared tooling (catalog validators,
-gate-artifact schema, outcome-ledger helpers), per Elyos conventions. The *contributions
+**Tech stack.** TypeScript/ESM + pnpm for any Hee-Lee Oss-side shared tooling (catalog validators,
+gate-artifact schema, outcome-ledger helpers), per Hee-Lee Oss conventions. The *contributions
 themselves* are authored in the target tool's native language and toolchain (Python/R/Java/Nextflow
 etc.) and follow that project's style — we do not impose TypeScript on upstream repos. Tutorials
 are Markdown + notebooks/scripts; environments are conda/pixi/renv/Docker as the ecosystem
@@ -397,7 +397,7 @@ tasks, and one complete schema-valid example Task JSON.
 - **Data sources (referenced, never mirrored by default):** open-tier GDC/TCGA, CPTAC open imaging,
   DepMap, de-identified open GEO, cBioPortal public exports, ICGC/PCAWG open-tier. COSMIC/OncoKB
   are document-by-reference only.
-- **Elyos pieces:** Task JSON schema (`packages/schema`), the donated-lane CLI workspace/PR flow
+- **Hee-Lee Oss pieces:** Task JSON schema (`packages/schema`), the donated-lane CLI workspace/PR flow
   (`packages/cli`), the good-deed definition + refusal guardrails. No funded-lane/runner
   dependency (this project is donated lane).
 
@@ -422,7 +422,7 @@ tasks, and one complete schema-valid example Task JSON.
 - **Secrets handling:** contributions require no credentials by default. If a tutorial demonstrates
   an API needing a token (e.g. OncoKB/GDC), the token is supplied by the *user* at run time and is
   **never** committed, logged, or embedded — the tutorial uses environment variables/placeholders
-  and documents how the user obtains their own access under their own license (per Elyos rules).
+  and documents how the user obtains their own access under their own license (per Hee-Lee Oss rules).
 - **PII / patient data:** the dominant privacy concern is upstream cancer data. Handled by the
   cancer-data guardrail: only open-access/aggregate/de-identified data, never controlled-access or
   identifiable patient data, never embedded COSMIC/OncoKB content. We do not download, store, or
@@ -455,17 +455,17 @@ tasks, and one complete schema-valid example Task JSON.
   outside the repo, or always contribute in-repo under the tool's license? (Default: in-repo.)
 - What is the bar for a "verifiable external reuse event" for a tutorial/doc?
 - How do we handle a tool whose CI we cannot run our reproducibility check in — host a mirror CI
-  in the Elyos project repo, or require the upstream CI to run it?
+  in the Hee-Lee Oss project repo, or require the upstream CI to run it?
 - Synthetic cancer data for tutorials: do we generate it ad hoc per tutorial, or coordinate with
   the `synthetic-cancer-data` portfolio project for a shared, license-clean fixture set?
 
 ## References
 
-- Elyos work rules — `C:\code\elyos\CLAUDE.md`
-- Good Deed Definition + risk tiers — `C:\code\elyos\docs\good-deed-definition.md`
-- Task JSON schema — `C:\code\elyos\packages\schema\src\schemas.ts`
-- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\elyos\planning\ROADMAP.md`
-- Companion plan style reference — `C:\code\elyos\planning\projects\open-data-datasheets\PLAN.md`
+- Hee-Lee Oss work rules — `C:\code\hee-lee-oss\CLAUDE.md`
+- Good Deed Definition + risk tiers — `C:\code\hee-lee-oss\docs\good-deed-definition.md`
+- Task JSON schema — `C:\code\hee-lee-oss\packages\schema\src\schemas.ts`
+- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\hee-lee-oss\planning\ROADMAP.md`
+- Companion plan style reference — `C:\code\hee-lee-oss\planning\projects\open-data-datasheets\PLAN.md`
 - GDC Data Access (open vs. controlled tiers); dbGaP / EGA controlled-access policy
 - TCGA / CPTAC open-access imaging; DepMap (CC-BY-4.0); GEO; cBioPortal; ICGC/PCAWG open-tier
 - COSMIC license (non-commercial); OncoKB terms of use (non-commercial / API license)
@@ -525,7 +525,7 @@ to this PLAN and to `TASKS.md` (not left as suggestions). Each cites where it no
 23. **Anti-bit-rot maintenance process** (re-run tutorials against new tool releases on a cadence;
     breakages become maintenance tasks) added to Sustainability.
 24. **Honest `verifiedNeed: false`** everywhere until a named maintainer agrees, with a clear flip
-    condition — matching Elyos's "delivered, not merged" honesty bar.
+    condition — matching Hee-Lee Oss's "delivered, not merged" honesty bar.
 25. **Cross-project coordination** flagged (synthetic fixtures via `synthetic-cancer-data`; tool
     overlap with `ml-oncology-benchmarks`, `ewing-fusion-detection-benchmark`,
     `pathology-image-benchmarks`) in Open questions/References to avoid duplicated effort.
@@ -542,7 +542,7 @@ CLAUDE.md, the good-deed definition, and the Track 8 cancer guardrails.**
   no medical advice / patient-facing out of scope; provenance required on every assertion. ✔
 - **"Delivered, not merged":** Definition of Shipped = merged/accepted upstream + reproducible CI +
   recorded evidence; vanity metrics excluded. ✔
-- **Lane/conventions:** donated lane (no funded budget); Elyos-side tooling TS/ESM/pnpm; DCO
+- **Lane/conventions:** donated lane (no funded budget); Hee-Lee Oss-side tooling TS/ESM/pnpm; DCO
   sign-off; CC-BY-4.0 docs / MIT helper code / upstream-license for in-repo code. ✔
 - **Honesty:** partner/requestor and per-task `verifiedNeed` are `TO BE SECURED`/`false` until a
   named maintainer agrees; blocking reviewer role flagged as unfilled. ✔

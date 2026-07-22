@@ -12,7 +12,7 @@
   "tokenEstimate": "small",
   "status": "open",
   "context": "The cancer-data guardrail requires provenance on every referenced data source including a captured copy of the license text or page. Without an automated snapshot tool, this step is error-prone: reviewers may accept a dead link or an undated page that has since changed terms. A committed snapshot (license text + SHA-256 hash + Wayback save URL) makes license verification auditable and durable. Depends on gate-002, where the provenance model is defined.",
-  "objective": "Build and commit a Elyos-side helper tool that, for any referenced data source, captures a committed copy of the license text/page, computes its SHA-256 hash, saves it to the Wayback Machine, and records the path + hash + timestamp in exampleData.provenanceRef.",
+  "objective": "Build and commit a Hee-Lee Oss-side helper tool that, for any referenced data source, captures a committed copy of the license text/page, computes its SHA-256 hash, saves it to the Wayback Machine, and records the path + hash + timestamp in exampleData.provenanceRef.",
   "acceptanceCriteria": [
     "For any referenced data source, the tool captures a committed copy of the license text/page plus its SHA-256 hash plus a Wayback Machine save URL.",
     "The exampleData.provenanceRef field records the committed path + hash + capture timestamp.",
@@ -26,7 +26,7 @@
     "Wayback Machine API documentation",
     "Gate artifact schema (gate-002 output)"
   ],
-  "output": "A committed MIT-licensed Elyos-side helper tool for license-snapshot capture, with tests green and CI passing, enabling auditable provenance on all referenced data sources from M1 onward.",
+  "output": "A committed MIT-licensed Hee-Lee Oss-side helper tool for license-snapshot capture, with tests green and CI passing, enabling auditable provenance on all referenced data sources from M1 onward.",
   "requestor": "TO BE SECURED",
   "verifiedNeed": false,
   "outputLicense": "MIT"

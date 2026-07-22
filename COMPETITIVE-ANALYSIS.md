@@ -1,6 +1,6 @@
 # Competitive & Improvement Analysis — `onco-research-software-docs`
 
-> Scope: Elyos donated-lane project contributing documentation, runnable tutorials, and test
+> Scope: Hee-Lee Oss donated-lane project contributing documentation, runnable tutorials, and test
 > coverage **upstream** to widely-used, genuinely open-source cancer-research software. Low risk.
 > Analysis date: 2026-06-29. Sources are inline as URLs.
 
