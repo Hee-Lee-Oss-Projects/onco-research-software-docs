@@ -6,7 +6,7 @@ Cancer research runs on open-source software — variant callers, differential-e
 
 **Definition of shipped:** via a written confirmation for non-GitHub channels), the tutorial/tests **run reproducibly in CI**, the cancer-data guardrail and provenance are satisfied with the gate artifact committed, and the Steward has recorded the acceptance evidence artifact (`outcomes/<task-id>.json`, w
 
-This is an **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/hee-lee-oss
+This is a **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Get started: https://github.com/Hee-Lee-Oss-Projects/hee-lee-oss-downloads
 
 ## Plan
 - [PLAN.md](./PLAN.md) — robust enterprise plan (vision, architecture, roadmap, risks; includes an applied-improvements appendix + review sign-off)
